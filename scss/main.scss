@@ -1,0 +1,439 @@
+$red-color: #e2001a;
+$blue-color: #001c3a;
+$black-color: #000000;
+$white-color: #ffffff;
+$yellow-color: #ffee00;
+
+$mobile-viewport: 900px;
+
+$portrait-image-message: "A veces, somos gente normal";
+
+$brand-advantages-item1-image: "../assets/Fotos\ e\ iconos/digital-brain-with-neon-lights-representing-fusion-neuroscience-advanced-technology.jpg";
+$brand-advantages-item1-image-icon: "../assets/Fotos\ e\ iconos/salud-mental.svg";
+
+$brand-advantages-item2-image: "../assets/Fotos\ e\ iconos/3d-rendering-dartboard-red-blurry-motion-capturing-dynamic-action-competitive-setting.jpg";
+$brand-advantages-item2-image-icon: "../assets/Fotos\ e\ iconos/esperma.svg";
+
+$brand-advantages-item3-image: "../assets/Fotos\ e\ iconos/isolated-beautiful-cyber-woman-against-abstract-background.jpg";
+$brand-advantages-item3-image-icon: "../assets/Fotos\ e\ iconos/chincheta.svg";
+
+$brand-advantages-item4-image: "../assets/Fotos\ e\ iconos/powerful-partnership-handshake-symbolizing-collaboration-trust-success-highlighted-with.jpg";
+$brand-advantages-item4-image-icon: "../assets/Fotos\ e\ iconos/jarro-de-cerveza.svg";
+
+$social-icon-1: "../assets/logos/Recurso 15.svg";
+$social-icon-2: "../assets/logos/Recurso 16.svg";
+
+$slider-image-1: "../assets/portada/edit 1 copia.webp";
+$slider-image-2: "../assets/portada/edit 2 copia.webp";
+$slider-image-3: "../assets/portada/edit 3 copia.webp";
+$slider-image-4: "../assets/portada/edit 4 copia.webp";
+
+@use "mixins";
+
+%placeholder-style {
+  color: $red-color;
+  font-weight: bolder;
+  padding-top: 14px;
+  padding-left: 15px;
+}
+
+body {
+  @media screen and (max-width: $mobile-viewport) {
+    font-size: 12px;
+  }
+  font-size: 16px;
+  font-family: "Outfit", sans-serif;
+  margin: 0;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+
+  .newsletter {
+    @include mixins.newsletter($red-color, $white-color);
+    a {
+      color: $white-color;
+    }
+  }
+
+  .navbar {
+    z-index: 2;
+    background: $white-color;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0 10px 0;
+    div {
+      @media screen and (max-width: $mobile-viewport) {
+        padding: 0 10px;
+      }
+      padding: 0 20px 0 20px;
+    }
+    .navbar-logo {
+      @media screen and (max-width: $mobile-viewport) {
+        width: 100px;
+      }
+      width: 150px;
+    }
+    .navbar-elements {
+      button {
+        @media screen and (max-width: $mobile-viewport) {
+          font-size: 10px;
+        }
+        padding: 0 10px;
+        color: $red-color;
+        background: none;
+        border: none;
+        font-weight: bolder;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+
+    .navbar-social {
+      button {
+        &:hover {
+          cursor: pointer;
+        }
+        margin: 0px 5px;
+      }
+      .instagram {
+        @include mixins.navbar-social($red-color, $social-icon-1);
+      }
+      .facebook {
+        @include mixins.navbar-social($red-color, $social-icon-2);
+      }
+    }
+  }
+
+  .portrait {
+    color: $white-color;
+    position: relative;
+    height: 88vh;
+    border: solid;
+
+    .swiper {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+
+      // Navigation buttons
+      .swiper-button-prev,
+      .swiper-button-next {
+        position: absolute;
+        z-index: 10;
+      }
+
+      .portrait-message {
+        @media screen and (max-width: $mobile-viewport) {
+          font-size: 45px;
+        }
+        background: linear-gradient(90deg, $red-color, rgba(0, 0, 0, 0));
+        font-size: 90px;
+        display: flex;
+        align-items: flex-end;
+        width: 33%;
+        padding-left: 40px;
+        line-height: 0.9;
+        position: absolute;
+        top: 0;
+        height: 100%;
+        z-index: 5;
+        pointer-events: none;
+      }
+
+      .swiper-slide {
+        position: relative;
+        z-index: 1;
+        height: 100%;
+
+        .image-1 {
+          @include mixins.slider-image($slider-image-1);
+          height: 100%;
+          width: 100%;
+        }
+        .image-2 {
+          @include mixins.slider-image($slider-image-2);
+          height: 100%;
+          width: 100%;
+        }
+        .image-3 {
+          @include mixins.slider-image($slider-image-3);
+          height: 100%;
+          width: 100%;
+        }
+        .image-4 {
+          @include mixins.slider-image($slider-image-4);
+          height: 100%;
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .brand-advantages-container {
+    padding: 200px 100px 200px 100px;
+    .brand-advantages-items {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 70px;
+      .item {
+        @include mixins.item(
+          $brand-advantages-item1-image,
+          $brand-advantages-item1-image-icon,
+          "1"
+        );
+      }
+      .item-2 {
+        @include mixins.item(
+          $brand-advantages-item2-image,
+          $brand-advantages-item2-image-icon,
+          "2"
+        );
+      }
+      .item-3 {
+        @include mixins.item(
+          $brand-advantages-item3-image,
+          $brand-advantages-item3-image-icon,
+          "3"
+        );
+      }
+      .item-4 {
+        @include mixins.item(
+          $brand-advantages-item4-image,
+          $brand-advantages-item4-image-icon,
+          "4"
+        );
+      }
+    }
+  }
+  .advertising {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background-color: $blue-color;
+    color: $white-color;
+    height: 350px;
+    position: relative;
+    h1 {
+      z-index: 2;
+      padding-bottom: 80px;
+    }
+    img {
+      bottom: -80px;
+      width: 400px;
+      position: absolute;
+    }
+  }
+  .our-clients {
+    margin-top: -2px;
+    background: linear-gradient($white-color 0%, 5%, $red-color);
+    padding-top: 250px;
+    padding-bottom: 150px;
+    text-align: center;
+    color: $white-color;
+    margin-bottom: 1px;
+    .our-clients-logos-container {
+      margin-top: 100px;
+      padding: 0 60px 0 60px;
+      .our-clients-logos {
+        flex-wrap: wrap;
+        display: flex;
+        flex: 100%;
+        img {
+          margin: 2px;
+          padding: 40px 20px;
+          flex-grow: 1;
+
+          width: 100px;
+          max-height: 30px;
+        }
+        #extended {
+          flex-grow: 10;
+        }
+      }
+    }
+  }
+  .send-message-container {
+    padding-top: 100px;
+    background: $red-color;
+    color: $white-color;
+    padding-bottom: 100px;
+    h1,
+    h2 {
+      font-weight: lighter;
+    }
+    .send-message-inner-container {
+      @media screen and (max-width: $mobile-viewport) {
+        padding: 0px 20px;
+      }
+      padding: 0px 80px;
+      display: flex;
+      flex-wrap: wrap;
+
+      .send-message-form-container {
+        @media screen and (max-width: $mobile-viewport) {
+          width: 100%;
+        }
+        width: 50%;
+
+        .send-message-inputs {
+          display: flex;
+          flex-wrap: wrap;
+          input {
+            &::placeholder {
+              @extend %placeholder-style;
+            }
+            padding: 5px;
+            border: none;
+            border-radius: 4px;
+            margin: 2px;
+            width: 40%;
+            flex-grow: 1;
+          }
+          textarea {
+            &::placeholder {
+              @extend %placeholder-style;
+              padding-left: 20px;
+            }
+            border: none;
+            resize: none;
+            border-radius: 4px;
+            margin: 2px;
+            width: 100%;
+            height: 150px;
+          }
+        }
+      }
+
+      .send-message-result-container {
+        @media screen and (max-width: $mobile-viewport) {
+          width: 100%;
+        }
+        width: 50%;
+
+        .send-message-result-inner-container {
+          @media screen and (max-width: $mobile-viewport) {
+            padding-left: 0px;
+          }
+          padding-left: 60px;
+          padding-top: 70px;
+          .send-message-result-radio {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding-top: 10px;
+            input {
+              appearance: none;
+              border: solid $white-color 1px;
+              border-radius: 100%;
+              padding: 20px;
+              &:hover {
+                cursor: pointer;
+              }
+            }
+            label {
+              border-radius: 10px;
+              border: solid $white-color 1px;
+              padding: 10px 20px;
+              width: 100%;
+            }
+          }
+          .send-message-result-conditions-container {
+            padding-top: 90px;
+            display: flex;
+            width: 100%;
+            gap: 10px;
+            .send-message-result-conditions {
+              display: flex;
+              gap: 4px;
+              input {
+                appearance: none;
+                background-color: $white-color;
+                padding: 20px;
+                border-radius: 10px;
+              }
+            }
+            button {
+              &:hover {
+                cursor: pointer;
+              }
+              background-color: $yellow-color;
+              color: $red-color;
+              border: none;
+              border-radius: 20px;
+              width: 70%;
+            }
+            label {
+              font-weight: lighter;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .footer-newsletter {
+    @include mixins.newsletter($white-color, $red-color);
+    a {
+      color: $red-color;
+    }
+  }
+
+  .footer-container {
+    background-color: $blue-color;
+    color: $white-color;
+    @media screen and (max-width: $mobile-viewport) {
+      padding: 50px 10px 50px 10px;
+      gap: 20px;
+      font-size: 10px;
+    }
+    padding: 50px 200px 50px 50px;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+
+    h2 {
+      color: $red-color;
+    }
+
+    .contact .contact-data h2 {
+      padding-bottom: 20px;
+    }
+    .secure-payment {
+      padding-top: 10px;
+      img {
+        margin: 0 3px;
+        width: 50px;
+      }
+      h2 {
+        color: $white-color;
+      }
+    }
+    .services {
+      padding-top: 25px;
+    }
+    .social {
+      padding-top: 100px;
+      img {
+        padding-right: 20px;
+        width: 20px;
+      }
+    }
+    .logo {
+      position: absolute;
+      bottom: 20px;
+      right: 25px;
+      width: 200px;
+    }
+  }
+  .copyright {
+    text-align: center;
+    color: $red-color;
+    height: 50px;
+  }
+}

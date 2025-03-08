@@ -1,0 +1,87 @@
+¡Hola!
+
+El proyecto tiene la siguiente extructura
+
+├── assets
+│   ├── colores
+│   │   └── colores.rtfd
+│   │       ├── Pasted Graphic.png
+│   │       └── TXT.rtf
+│   ├── Fotos e iconos
+│   │   ├── 3d-rendering-dartboard-red-blurry-motion-capturing-dynamic-action-competitive-setting.jpg
+│   │   ├── chincheta.svg
+│   │   ├── digital-brain-with-neon-lights-representing-fusion-neuroscience-advanced-technology.jpg
+│   │   ├── esperma.svg
+│   │   ├── impactacom_Waiter_preparing_a_cocktail_from_which_a_lot_of_smok_39cc6042-3b3e-4264-91e6-3ddbb9f91152.png
+│   │   ├── isolated-beautiful-cyber-woman-against-abstract-background.jpg
+│   │   ├── jarro-de-cerveza.svg
+│   │   ├── powerful-partnership-handshake-symbolizing-collaboration-trust-success-highlighted-with.jpg
+│   │   └── salud-mental.svg
+│   ├── logos
+│   │   ├── Recurso 10.svg
+│   │   ├── Recurso 11.svg
+│   │   ├── Recurso 12.svg
+│   │   ├── Recurso 13.svg
+│   │   ├── Recurso 14.svg
+│   │   ├── Recurso 15.svg
+│   │   ├── Recurso 16.svg
+│   │   ├── Recurso 17.svg
+│   │   ├── Recurso 18.svg
+│   │   ├── Recurso 19.svg
+│   │   ├── Recurso 1.svg
+│   │   ├── Recurso 20.svg
+│   │   ├── Recurso 2.svg
+│   │   ├── Recurso 3.svg
+│   │   ├── Recurso 4.svg
+│   │   ├── Recurso 5.svg
+│   │   ├── Recurso 6.svg
+│   │   ├── Recurso 7.svg
+│   │   ├── Recurso 8.svg
+│   │   └── Recurso 9.svg
+│   └── portada
+│       ├── edit 1 copia.webp
+│       ├── edit 2 copia.webp
+│       ├── edit 3 copia.webp
+│       ├── edit 4 copia.webp
+│       └── paisaje-e1549600034372.jpg
+├── css
+│   ├── main.css
+│   └── main.css.map
+├── Estructura del proyecto
+├── index.html
+├── js
+│   ├── aos.js
+│   └── swiper.js
+└── scss
+    ├── main.css
+    ├── main.css.map
+    ├── main.scss
+    └── mixins.scss
+
+--Estructura de la pagina--
+
+La carpeta js contiene 2 archivos de javascript, uno para la animación y otro para el slider
+siendo los inicializadores de dichas librerias.
+
+La carpeta scss contiene 2 archivos de scss uno para el estilo main que contiene todos los elementos
+de la pagina dividiendose en secciones dependiendo de la estructura de la pagina y los mixins los cuales
+me permite hacer uso de las capacidades de scss reutilizando estilos css sin tener que volver a repetir
+codigo.
+
+La carpeta css contiene el archivo css junto a su archivo map que permite la visualizacion de las versiones
+la cual es el archivo compilado de scss.
+
+La carpeta assets contiene todas las imagenes que fueron proporcionadas.
+
+index.html contiene la estructura de la pagina, dividiendose en secciones dependiendo de
+como la pagina se compone.
+
+--Decisiones de diseño--
+
+La estructura se impremento de tal manera en que se haga referencia al diseño planteado para la pagina
+teniendo en cuenta que debe de ser responsive se tiene un media query de 900px los cuales cambian
+la estructura visual de la pagina para perrmitir una mejor visualizacion en celulares y tablets.
+
+El archivo main.scss contiene variables los cuales permiten la rapida edicion de los colores de la pagina
+permitiendo cambiar los colores principales utilizados con tan solo cambiar la variable que hace referencia
+dicho color. 

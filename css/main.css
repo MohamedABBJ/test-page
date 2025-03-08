@@ -1,0 +1,629 @@
+.content .send-message-container .send-message-inner-container .send-message-form-container .send-message-inputs textarea::-moz-placeholder, .content .send-message-container .send-message-inner-container .send-message-form-container .send-message-inputs input::-moz-placeholder {
+  color: #e2001a;
+  font-weight: bolder;
+  padding-top: 14px;
+  padding-left: 15px;
+}
+
+.content .send-message-container .send-message-inner-container .send-message-form-container .send-message-inputs textarea::placeholder, .content .send-message-container .send-message-inner-container .send-message-form-container .send-message-inputs input::placeholder {
+  color: #e2001a;
+  font-weight: bolder;
+  padding-top: 14px;
+  padding-left: 15px;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Outfit", sans-serif;
+  margin: 0;
+}
+@media screen and (max-width: 900px) {
+  body {
+    font-size: 12px;
+  }
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+}
+.content .newsletter {
+  background-color: #e2001a;
+  color: #ffffff;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+@media screen and (max-width: 900px) {
+  .content .newsletter {
+    font-size: 10px;
+  }
+}
+.content .newsletter a {
+  color: #ffffff;
+}
+.content .navbar {
+  z-index: 2;
+  background: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0 10px 0;
+}
+.content .navbar div {
+  padding: 0 20px 0 20px;
+}
+@media screen and (max-width: 900px) {
+  .content .navbar div {
+    padding: 0 10px;
+  }
+}
+.content .navbar .navbar-logo {
+  width: 150px;
+}
+@media screen and (max-width: 900px) {
+  .content .navbar .navbar-logo {
+    width: 100px;
+  }
+}
+.content .navbar .navbar-elements button {
+  padding: 0 10px;
+  color: #e2001a;
+  background: none;
+  border: none;
+  font-weight: bolder;
+}
+@media screen and (max-width: 900px) {
+  .content .navbar .navbar-elements button {
+    font-size: 10px;
+  }
+}
+.content .navbar .navbar-elements button:hover {
+  cursor: pointer;
+}
+.content .navbar .navbar-social button {
+  margin: 0px 5px;
+}
+.content .navbar .navbar-social button:hover {
+  cursor: pointer;
+}
+.content .navbar .navbar-social .instagram {
+  border: none;
+  width: 20px;
+  height: 20px;
+  background-color: #e2001a;
+  -webkit-mask-image: url("../assets/logos/Recurso 15.svg");
+          mask-image: url("../assets/logos/Recurso 15.svg");
+  -webkit-mask-size: 100%;
+          mask-size: 100%;
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+          mask-position: center;
+}
+.content .navbar .navbar-social .facebook {
+  border: none;
+  width: 20px;
+  height: 20px;
+  background-color: #e2001a;
+  -webkit-mask-image: url("../assets/logos/Recurso 16.svg");
+          mask-image: url("../assets/logos/Recurso 16.svg");
+  -webkit-mask-size: 100%;
+          mask-size: 100%;
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+          mask-position: center;
+}
+.content .portrait {
+  color: #ffffff;
+  position: relative;
+  height: 88vh;
+  border: solid;
+}
+.content .portrait .swiper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.content .portrait .swiper .swiper-button-prev,
+.content .portrait .swiper .swiper-button-next {
+  position: absolute;
+  z-index: 10;
+}
+.content .portrait .swiper .portrait-message {
+  background: linear-gradient(90deg, #e2001a, rgba(0, 0, 0, 0));
+  font-size: 90px;
+  display: flex;
+  align-items: flex-end;
+  width: 33%;
+  padding-left: 40px;
+  line-height: 0.9;
+  position: absolute;
+  top: 0;
+  height: 100%;
+  z-index: 5;
+  pointer-events: none;
+}
+@media screen and (max-width: 900px) {
+  .content .portrait .swiper .portrait-message {
+    font-size: 45px;
+  }
+}
+.content .portrait .swiper .swiper-slide {
+  position: relative;
+  z-index: 1;
+  height: 100%;
+}
+.content .portrait .swiper .swiper-slide .image-1 {
+  background: url("../assets/portada/edit 1 copia.webp");
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+.content .portrait .swiper .swiper-slide .image-2 {
+  background: url("../assets/portada/edit 2 copia.webp");
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+.content .portrait .swiper .swiper-slide .image-3 {
+  background: url("../assets/portada/edit 3 copia.webp");
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+.content .portrait .swiper .swiper-slide .image-4 {
+  background: url("../assets/portada/edit 4 copia.webp");
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+.content .brand-advantages-container {
+  padding: 200px 100px 200px 100px;
+}
+.content .brand-advantages-container .brand-advantages-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 70px;
+}
+.content .brand-advantages-container .brand-advantages-items .item {
+  width: 450px;
+}
+.content .brand-advantages-container .brand-advantages-items .item .item-image {
+  height: 200px;
+  background-size: cover;
+  background-image: url("../assets/Fotos e iconos/digital-brain-with-neon-lights-representing-fusion-neuroscience-advanced-technology.jpg");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+  position: relative;
+}
+.content .brand-advantages-container .brand-advantages-items .item .item-image::before {
+  content: "1";
+  color: #e2001a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  left: -2px;
+  bottom: -15px;
+  border-radius: 100%;
+  background-color: white;
+}
+.content .brand-advantages-container .brand-advantages-items .item .item-image .image-overlay {
+  background-color: rgba(255, 0, 0, 0.4);
+  width: 100%;
+  height: 100%;
+}
+.content .brand-advantages-container .brand-advantages-items .item .item-image .image-icon {
+  position: absolute;
+  -webkit-mask-position: center;
+          mask-position: center;
+  -webkit-mask-size: 30%;
+          mask-size: 30%;
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+  background-color: white;
+  -webkit-mask-image: url("../assets/Fotos e iconos/salud-mental.svg");
+          mask-image: url("../assets/Fotos e iconos/salud-mental.svg");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+.content .brand-advantages-container .brand-advantages-items .item-2 {
+  width: 450px;
+}
+.content .brand-advantages-container .brand-advantages-items .item-2 .item-image {
+  height: 200px;
+  background-size: cover;
+  background-image: url("../assets/Fotos e iconos/3d-rendering-dartboard-red-blurry-motion-capturing-dynamic-action-competitive-setting.jpg");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+  position: relative;
+}
+.content .brand-advantages-container .brand-advantages-items .item-2 .item-image::before {
+  content: "2";
+  color: #e2001a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  left: -2px;
+  bottom: -15px;
+  border-radius: 100%;
+  background-color: white;
+}
+.content .brand-advantages-container .brand-advantages-items .item-2 .item-image .image-overlay {
+  background-color: rgba(255, 0, 0, 0.4);
+  width: 100%;
+  height: 100%;
+}
+.content .brand-advantages-container .brand-advantages-items .item-2 .item-image .image-icon {
+  position: absolute;
+  -webkit-mask-position: center;
+          mask-position: center;
+  -webkit-mask-size: 30%;
+          mask-size: 30%;
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+  background-color: white;
+  -webkit-mask-image: url("../assets/Fotos e iconos/esperma.svg");
+          mask-image: url("../assets/Fotos e iconos/esperma.svg");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+.content .brand-advantages-container .brand-advantages-items .item-3 {
+  width: 450px;
+}
+.content .brand-advantages-container .brand-advantages-items .item-3 .item-image {
+  height: 200px;
+  background-size: cover;
+  background-image: url("../assets/Fotos e iconos/isolated-beautiful-cyber-woman-against-abstract-background.jpg");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+  position: relative;
+}
+.content .brand-advantages-container .brand-advantages-items .item-3 .item-image::before {
+  content: "3";
+  color: #e2001a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  left: -2px;
+  bottom: -15px;
+  border-radius: 100%;
+  background-color: white;
+}
+.content .brand-advantages-container .brand-advantages-items .item-3 .item-image .image-overlay {
+  background-color: rgba(255, 0, 0, 0.4);
+  width: 100%;
+  height: 100%;
+}
+.content .brand-advantages-container .brand-advantages-items .item-3 .item-image .image-icon {
+  position: absolute;
+  -webkit-mask-position: center;
+          mask-position: center;
+  -webkit-mask-size: 30%;
+          mask-size: 30%;
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+  background-color: white;
+  -webkit-mask-image: url("../assets/Fotos e iconos/chincheta.svg");
+          mask-image: url("../assets/Fotos e iconos/chincheta.svg");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+.content .brand-advantages-container .brand-advantages-items .item-4 {
+  width: 450px;
+}
+.content .brand-advantages-container .brand-advantages-items .item-4 .item-image {
+  height: 200px;
+  background-size: cover;
+  background-image: url("../assets/Fotos e iconos/powerful-partnership-handshake-symbolizing-collaboration-trust-success-highlighted-with.jpg");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+  position: relative;
+}
+.content .brand-advantages-container .brand-advantages-items .item-4 .item-image::before {
+  content: "4";
+  color: #e2001a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  left: -2px;
+  bottom: -15px;
+  border-radius: 100%;
+  background-color: white;
+}
+.content .brand-advantages-container .brand-advantages-items .item-4 .item-image .image-overlay {
+  background-color: rgba(255, 0, 0, 0.4);
+  width: 100%;
+  height: 100%;
+}
+.content .brand-advantages-container .brand-advantages-items .item-4 .item-image .image-icon {
+  position: absolute;
+  -webkit-mask-position: center;
+          mask-position: center;
+  -webkit-mask-size: 30%;
+          mask-size: 30%;
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+  background-color: white;
+  -webkit-mask-image: url("../assets/Fotos e iconos/jarro-de-cerveza.svg");
+          mask-image: url("../assets/Fotos e iconos/jarro-de-cerveza.svg");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+.content .advertising {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  background-color: #001c3a;
+  color: #ffffff;
+  height: 350px;
+  position: relative;
+}
+.content .advertising h1 {
+  z-index: 2;
+  padding-bottom: 80px;
+}
+.content .advertising img {
+  bottom: -80px;
+  width: 400px;
+  position: absolute;
+}
+.content .our-clients {
+  margin-top: -2px;
+  background: linear-gradient(#ffffff 0%, 5%, #e2001a);
+  padding-top: 250px;
+  padding-bottom: 150px;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 1px;
+}
+.content .our-clients .our-clients-logos-container {
+  margin-top: 100px;
+  padding: 0 60px 0 60px;
+}
+.content .our-clients .our-clients-logos-container .our-clients-logos {
+  flex-wrap: wrap;
+  display: flex;
+  flex: 100%;
+}
+.content .our-clients .our-clients-logos-container .our-clients-logos img {
+  margin: 2px;
+  padding: 40px 20px;
+  flex-grow: 1;
+  width: 100px;
+  max-height: 30px;
+}
+.content .our-clients .our-clients-logos-container .our-clients-logos #extended {
+  flex-grow: 10;
+}
+.content .send-message-container {
+  padding-top: 100px;
+  background: #e2001a;
+  color: #ffffff;
+  padding-bottom: 100px;
+}
+.content .send-message-container h1,
+.content .send-message-container h2 {
+  font-weight: lighter;
+}
+.content .send-message-container .send-message-inner-container {
+  padding: 0px 80px;
+  display: flex;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 900px) {
+  .content .send-message-container .send-message-inner-container {
+    padding: 0px 20px;
+  }
+}
+.content .send-message-container .send-message-inner-container .send-message-form-container {
+  width: 50%;
+}
+@media screen and (max-width: 900px) {
+  .content .send-message-container .send-message-inner-container .send-message-form-container {
+    width: 100%;
+  }
+}
+.content .send-message-container .send-message-inner-container .send-message-form-container .send-message-inputs {
+  display: flex;
+  flex-wrap: wrap;
+}
+.content .send-message-container .send-message-inner-container .send-message-form-container .send-message-inputs input {
+  padding: 5px;
+  border: none;
+  border-radius: 4px;
+  margin: 2px;
+  width: 40%;
+  flex-grow: 1;
+}
+.content .send-message-container .send-message-inner-container .send-message-form-container .send-message-inputs textarea {
+  border: none;
+  resize: none;
+  border-radius: 4px;
+  margin: 2px;
+  width: 100%;
+  height: 150px;
+}
+.content .send-message-container .send-message-inner-container .send-message-form-container .send-message-inputs textarea::-moz-placeholder {
+  padding-left: 20px;
+}
+.content .send-message-container .send-message-inner-container .send-message-form-container .send-message-inputs textarea::placeholder {
+  padding-left: 20px;
+}
+.content .send-message-container .send-message-inner-container .send-message-result-container {
+  width: 50%;
+}
+@media screen and (max-width: 900px) {
+  .content .send-message-container .send-message-inner-container .send-message-result-container {
+    width: 100%;
+  }
+}
+.content .send-message-container .send-message-inner-container .send-message-result-container .send-message-result-inner-container {
+  padding-left: 60px;
+  padding-top: 70px;
+}
+@media screen and (max-width: 900px) {
+  .content .send-message-container .send-message-inner-container .send-message-result-container .send-message-result-inner-container {
+    padding-left: 0px;
+  }
+}
+.content .send-message-container .send-message-inner-container .send-message-result-container .send-message-result-inner-container .send-message-result-radio {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-top: 10px;
+}
+.content .send-message-container .send-message-inner-container .send-message-result-container .send-message-result-inner-container .send-message-result-radio input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: solid #ffffff 1px;
+  border-radius: 100%;
+  padding: 20px;
+}
+.content .send-message-container .send-message-inner-container .send-message-result-container .send-message-result-inner-container .send-message-result-radio input:hover {
+  cursor: pointer;
+}
+.content .send-message-container .send-message-inner-container .send-message-result-container .send-message-result-inner-container .send-message-result-radio label {
+  border-radius: 10px;
+  border: solid #ffffff 1px;
+  padding: 10px 20px;
+  width: 100%;
+}
+.content .send-message-container .send-message-inner-container .send-message-result-container .send-message-result-inner-container .send-message-result-conditions-container {
+  padding-top: 90px;
+  display: flex;
+  width: 100%;
+  gap: 10px;
+}
+.content .send-message-container .send-message-inner-container .send-message-result-container .send-message-result-inner-container .send-message-result-conditions-container .send-message-result-conditions {
+  display: flex;
+  gap: 4px;
+}
+.content .send-message-container .send-message-inner-container .send-message-result-container .send-message-result-inner-container .send-message-result-conditions-container .send-message-result-conditions input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+}
+.content .send-message-container .send-message-inner-container .send-message-result-container .send-message-result-inner-container .send-message-result-conditions-container button {
+  background-color: #ffee00;
+  color: #e2001a;
+  border: none;
+  border-radius: 20px;
+  width: 70%;
+}
+.content .send-message-container .send-message-inner-container .send-message-result-container .send-message-result-inner-container .send-message-result-conditions-container button:hover {
+  cursor: pointer;
+}
+.content .send-message-container .send-message-inner-container .send-message-result-container .send-message-result-inner-container .send-message-result-conditions-container label {
+  font-weight: lighter;
+}
+.content .footer-newsletter {
+  background-color: #ffffff;
+  color: #e2001a;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+@media screen and (max-width: 900px) {
+  .content .footer-newsletter {
+    font-size: 10px;
+  }
+}
+.content .footer-newsletter a {
+  color: #e2001a;
+}
+.content .footer-container {
+  background-color: #001c3a;
+  color: #ffffff;
+  padding: 50px 200px 50px 50px;
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+}
+@media screen and (max-width: 900px) {
+  .content .footer-container {
+    padding: 50px 10px 50px 10px;
+    gap: 20px;
+    font-size: 10px;
+  }
+}
+.content .footer-container h2 {
+  color: #e2001a;
+}
+.content .footer-container .contact .contact-data h2 {
+  padding-bottom: 20px;
+}
+.content .footer-container .secure-payment {
+  padding-top: 10px;
+}
+.content .footer-container .secure-payment img {
+  margin: 0 3px;
+  width: 50px;
+}
+.content .footer-container .secure-payment h2 {
+  color: #ffffff;
+}
+.content .footer-container .services {
+  padding-top: 25px;
+}
+.content .footer-container .social {
+  padding-top: 100px;
+}
+.content .footer-container .social img {
+  padding-right: 20px;
+  width: 20px;
+}
+.content .footer-container .logo {
+  position: absolute;
+  bottom: 20px;
+  right: 25px;
+  width: 200px;
+}
+.content .copyright {
+  text-align: center;
+  color: #e2001a;
+  height: 50px;
+}/*# sourceMappingURL=main.css.map */

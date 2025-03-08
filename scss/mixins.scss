@@ -1,0 +1,78 @@
+$red-color: #e2001a;
+$mobile-viewport: 900px;
+
+@mixin item(
+  $brand-advantages-item-image,
+  $brand-advantages-item-icon,
+  $number
+) {
+  width: 450px;
+  .item-image {
+    height: 200px;
+    background-size: cover;
+    background-image: url($brand-advantages-item-image);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    position: relative;
+    &::before {
+      content: $number;
+      color: $red-color;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      left: -2px;
+      bottom: -15px;
+      border-radius: 100%;
+      background-color: white;
+    }
+    .image-overlay {
+      background-color: rgb(255, 0, 0, 0.4);
+      width: 100%;
+      height: 100%;
+    }
+    .image-icon {
+      position: absolute;
+      mask-position: center;
+      mask-size: 30%;
+      mask-repeat: no-repeat;
+      background-color: white;
+      mask-image: url($brand-advantages-item-icon);
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+@mixin newsletter($background-color, $text-color) {
+  @media screen and (max-width: $mobile-viewport) {
+    font-size: 10px;
+  }
+  background-color: $background-color;
+  color: $text-color;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+@mixin navbar-social($icon-color, $icon) {
+  border: none;
+  width: 20px;
+  height: 20px;
+  background-color: $icon-color;
+  mask-image: url($icon);
+  mask-size: 100%;
+  mask-repeat: no-repeat;
+  mask-position: center;
+}
+@mixin slider-image($image) {
+  background: url($image);
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
